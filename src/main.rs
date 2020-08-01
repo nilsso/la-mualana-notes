@@ -11,6 +11,8 @@ use serde::export::Formatter;
 
 // NOTE:
 // https://serde.rs/enum-representations.html
+// https://glade.gnome.org/
+// https://developer.gnome.org/gtk3/stable/ch03.html
 
 #[derive(Deserialize, Serialize, Debug)]
 enum Area {
@@ -28,37 +30,12 @@ struct AreaNotes {
     room: Vec<Room>,
 }
 
-impl Display for AreaNotes {
-    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        writeln!(f, "[AREA \"{}\"]", self.name)?;
-        for room in self.room.iter() {
-            writeln!(f, "{}", room)?;
-        }
-
-        Ok(())
-    }
-}
-
 #[derive(Deserialize, Serialize, Debug)]
 struct Room {
     coord: (usize, usize),
     name: String,
     feature: Option<Vec<Feature>>,
     note: Option<String>,
-}
-
-impl Display for Room {
-    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        let (x, y) = self.coord;
-        writeln!(f, "[ROOM ({:2},{:2}) \"{}\"]", x, y, self.name)?;
-        if let Some(features) = &self.feature {
-            for feature in features {
-                write!(f, "{}", feature)?;
-            }
-        }
-
-        Ok(())
-    }
 }
 
 #[derive(Deserialize, Serialize, Debug)]
@@ -102,57 +79,6 @@ enum Feature {
     },
 }
 
-impl Display for Feature {
-    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        match self {
-            Feature::Save { text } => {
-                writeln!(f, "[SAVE TABLET]")?;
-                writeln!(f, "\"\"\"\n{}\n\"\"\"", text)?;
-            }
-            Feature::Tablet { text, img } => {
-                writeln!(f, "[TABLET]")?;
-                writeln!(f, "\"\"\"\n{}\n\"\"\"", text)?;
-                if let Some(_img) = img {
-                    // writeln!(f, "{}", img);
-                }
-            }
-            Feature::Skeleton { text } => {
-                writeln!(f, "[SKELETON]")?;
-                writeln!(f, "\"\"\"\n{}\n\"\"\"", text)?;
-            }
-            Feature::NPC { name, convos, store } => {
-                writeln!(f, "[NPC]")?;
-                if let Some(name) = name {
-                    writeln!(f, "name = {}", name)?;
-                }
-                if let Some(convos) = convos {
-                    for convo in convos.iter() {
-                        writeln!(f, "\"\"\"\n{}\n\"\"\"", convo)?;
-                    }
-                }
-                if let Some(_store) = store {}
-            }
-            Feature::Puzzle { description, clue, solution } => {
-                writeln!(f, "[PUZZLE]")?;
-                writeln!(f, "DESCRIPTION: \"{}\"", description)?;
-                writeln!(f, "CLUE: \"{}\"", clue)?;
-                writeln!(f, "SOLUTION:")?;
-                writeln!(f, "\"\"\"\n{}\n\"\"\"", solution)?;
-            }
-            Feature::Treasure { name, puzzle } => {
-                writeln!(f, "[TREASURE]")?;
-                writeln!(f, "{}", name)?;
-                if let Some(_puzzle) = puzzle {}
-            }
-            Feature::Door { door_type, connects_to, openned_by } => {
-                //
-            }
-        }
-
-        Ok(())
-    }
-}
-
 fn main() {
     // let an = AreaNotes {
     //     name: "Test".to_string(),
@@ -181,5 +107,5 @@ fn main() {
 
     let an: AreaNotes = toml::from_str(s.as_str()).unwrap();
 
-    println!("{}", an);
+    println!("{:#?}", an);
 }
