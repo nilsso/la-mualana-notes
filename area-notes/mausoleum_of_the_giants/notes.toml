@@ -1,0 +1,347 @@
+name = "Mausoleum of the Giants"
+
+[[room]]
+coord = [1, 2]
+name = "Last Shrine"
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [1, 3]
+name = "Last Shrine"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+We were unable to fulfill the great Mother's wishes.
+Now I too, the last remaining of u s, am due for a long slumber.
+
+Abuto\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [1, 4]
+name = "Room of Redemption"
+
+[[room.feature]]
+type = "NPC"
+convos = ["""\
+A <b>Nebra Sky Disk</b> lies beneath this land.
+Leap upon what floats there from high above.
+The heavens shall then move at your command.\
+"""
+]
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+The Mother was great.
+She made even the Giants look tiny.
+The Giants were great.
+Thou art tiny, like a little doll.\
+"""
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Thou art forbidden from again laying eyes on this marker.
+Those who heed not this warning will suffer the pain of death.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+# TODO
+[[room]]
+coord = [0, 0]
+name = ""
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Abuto, Ji, Ribu, and Sakit all hoped there
+would come a day
+when the mother would live in this land.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [2, 1]
+name = "Shrine of the Giants"
+
+[[room.feature]]
+type = "Treasure"
+name = "Rolling Shuriken"
+puzzle = "Simply wait for the boss the spawn and kill it."
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Concerned for this brothers, Ribu dug a hole to send the lake's
+water to the tower.
+His strength exhausted, he then laid down to rest.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [2, 2]
+name = "Approach of the Giants"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+This is where the <r>Ghost Lord</r> lives.
+Come one, come all.
+The Ghost Lord will appear before your eyes.
+Gather round, gather round.
+Sit tight until he is full grown.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [2, 3]
+name = "Approach of the Giants"
+
+[[room.feature]]
+type = "Treasure"
+name = "Map"
+puzzle = """\
+Triggering the pressure plate in the room flips a switch for the dias in the room above\
+to now open the chest.\
+"""
+
+[[room.feature]]
+type = "Tablet"
+img = "2-3-tablet.png"
+text = """\
+For the tower to fly, much water was needed.
+Migela carried a lake to this land, then draw his last breath.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [2, 4]
+name = "Room of Redemption"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+The sun shone brightly the day Ledo fell in battle.
+A gaping hole in his chest, he entered his enternal slumber.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [3, 4]
+name = "Zebu's Room"
+note = "Weighing scale"
+
+[[room.feature]]
+type = "Door"
+door_type = "Eye"
+connects_to = ["Unknown", [0, 0]]
+# openned_by
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [3, 5]
+name = "Shaft to the Heavens"
+
+[[room.feature]]
+type = "Save"
+text = """\
+Behold the <b>Mausoleum of the Giants</b>.
+The sad memories of the Giants are contained within.\
+"""
+
+[[room.feature]]
+type = "Save"
+text = """\
+It was a moonlit night that Ji started praying to the land.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [3, 6]
+name = "Monument to Hermes"
+text = """\
+A blanket of countless stars spread over Bado,
+falling into a deep slumber.\
+"""
+
+[[room.feature]]
+type = "NPC"
+store = [
+    "Hermes' Boots",
+    "Rolling Shuriken",
+    "Weights",
+]
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [3, 7]
+name = "Dolphin's Room"
+
+[[room.feature]]
+type = "Treasure"
+name = "?"
+puzzle = "?"
+
+[[room.feature]]
+type = "Tablet"
+text = "?"
+
+[[room.feature]]
+type = "Puzzle"
+description = "?"
+clue = "?"
+solution = "?"
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [4, 5]
+name = "Shaft to the Heavens"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Zebu would not budge,
+for he was the one who sustained the land,
+but the rest of them split into
+two sides and continued the battle.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [4, 6]
+name = "Star Palace of the Giants"
+
+[[room.feature]]
+type = "Treasure"
+name = "?"
+puzzle = "?"
+
+[[room.feature]]
+type = "Tablet"
+img = "4-6-tablet.png"
+text = """\
+Those who plunder the red l    .
+Shall never esc  e.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [4, 7]
+name = "Star Palace of the Giants"
+
+# ----------------------------------------------------------------------------------------------------------------------
+# TODO
+[[room]]
+coord = [4, 8]
+name = ""
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Zebu, the first born, was holding up the land,
+and thus unable to move.\
+"""
+
+[[room.feature]]
+type = "Skeleton"
+text = """\
+\"Strength lies at the foot of Futo\".
+But which one is Futo...?\
+"""
+
+[[room.feature]]
+type = "Door"
+door_type = "Normal"
+connects_to = ["TwinLabyrinths", [0, 0]]
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [5, 5]
+name = ""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [5, 2]
+name = "Moon Palace of the Giants"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+We are the second race born of the great Mother.
+We were created in order to return the Mother to the heavens.
+Let me tell you the sad tale of our race.
+The race began with nine brothers: Zebu, Bado, Migela, Ledo,
+Futo, Abuto, Ji, Ribu, and Sakit.\
+"""
+
+[[room.feature]]
+type = "Door"
+door_type = "Normal"
+connects_to = ["EndlessCorridor", [0, 0]]
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [5, 3]
+name = "Moon Palace of the Giants"
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [5, 4]
+name = "Moon Palace of the Giants"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+The youngest, Sakit, tread his own path.
+He put a key on Ledo's body, falling into slumber with his
+powers in hand.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [5, 5]
+name = "Shaft to the Heavens"
+
+[[room.feature]]
+type = "Tablet"
+img = "5-5-tablet.png"
+text = """\
+In order to return the Mother to the heavens, Bado, Migela,
+Ledo, and Futo build a flying tower.\
+"""
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+The 1st child had the body of a snake.
+The 2nd child, a large body.
+The 3rd child soared through the sky.
+The 4th child had the body of a fish.
+The 5th child had wisdom.
+The 6th child was born of the earth.
+The 7th child cast the Mother away.
+The 8th child did not know the Mother.
+Let us place the spirit of the 9th child into
+the body of child 0.\
+"""
+
+# ----------------------------------------------------------------------------------------------------------------------
+[[room]]
+coord = [6, 5]
+name = "Nebra Sky Disk"
+
+[[room.feature]]
+type = "Puzzle"
+description = "Puzzle for the entire area; the orientation of the dial is important."
+clue = ""
+solution = ""
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+The celestial bodies lie within.
+Control the celestial bodies, and even time may be shifted.\
+"""

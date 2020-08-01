@@ -1,0 +1,188 @@
+name = "Gate of Guidance"
+
+[[room]]
+coord = [1, 3]
+name = "Pillars Gate"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+This is where the Mother lays to rest.
+In this path of trials, only heroes who do not fear death are
+permitted to proceed.\
+"""
+
+[[room]]
+coord = [1, 4]
+name = "Pillars Gate"
+
+[[room.feature]]
+type = "Treasure"
+name = "Map"
+
+[[room.feature]]
+type = "NPC"
+convos = ["""\
+Eight spirits dwell within this land.
+The spirits are <b>guardians</b>, protectors of these
+grounds.
+The spirits slumber within <b>Ankhs</b> that will
+shatter under the bright red light.
+The spirits will awaken at that time.
+
+The Ankh of these lands lies beyond the path
+of the gazing faces, and the jewel is at the
+foot of the <b>Cliff of Radiance</b>.\
+"""
+]
+
+[[room]]
+coord = [2, 4]
+name = "Heavenly Temple of the Cross"
+
+[[room.feature]]
+type = "Save"
+text = """\
+Behold the <b>Gate of Guidance</b>.
+Death awaits those who would disturb this land.\
+"""
+
+[[room]]
+coord = [2, 5]
+name = "Heavenly Temple of the Cross"
+
+[[room.feature]]
+type = "Tablet"
+text = "Offer 3 lights to the heavens."
+
+[[room]]
+coord = [2, 6]
+name = "Room of Courage"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Thou traipses on holy ground.
+Take care not to cause any needless damage.
+Those who do not heed this warning will be dealt punishment
+from the heavens.
+"""
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Courageous one, embrace the power.
+If thou seeketh power, prove thine courage.\
+"""
+
+[[room.feature]]
+type = "Puzzle"
+description = "Divine eye block"
+clue = "Find the courage to try something normally stupid"
+solution = """\
+Falling into the spike pit reveals that the spikes are an illusion and the divine eye block disapears,
+revealing the surikens.\
+"""
+
+[[room]]
+coord = [2, 7]
+name = "Room of Courage"
+
+[[room.feature]]
+type = "Tablet"
+img = "2-7-tablet.png"
+text = """\
+Fear not the water.
+The water holds the answers for those who have been
+delivered by it.
+Cross the <b>Sacred Lake</b>.\
+"""
+
+[[room]]
+coord = [3, 1]
+name = "Door to Eden"
+
+[[room.feature]]
+type = "Tablet"
+img = "3-1-tablet.png"
+text = """\
+<r>Chi You</r>, the demon who attained the power of eternity by
+absorbing the life force of innocent maidens.
+Woe unto those that fall into the <b>Sacrificial Abyss</b>.\
+"""
+
+[[room.feature]]
+type = "Skeleton"
+text = """\
+What is with this...
+No matter how many times I try, the treasure box won't open.\
+"""
+
+[[room.feature]]
+type = "Treasure"
+name = "?"
+
+[[room]]
+coord = [3, 2]
+name = "Pit of the Holy Grail"
+
+[[room.feature]]
+type = "Tablet"
+img = "3-2-tablet.png"
+text = """\
+There are 8 <b>Ankhs</b>.
+8 Ankhs that protect the great spirits.
+Seek the red light; the <g>Ankh Jewel</g>.
+The <b>guardians</b> that slumber within the Ankh will test
+thine strength.\
+"""
+
+[[room]]
+coord = [3, 4]
+name = "Heavenly Corridor"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+Those who challenge the Guardian.
+Know thy strength.
+Death awaits the powerless.
+The future awaits those who train themselves and take
+on the challenge.\
+"""
+
+[[room.feature]]
+type = "Skeleton"
+text = """\
+The path of gazing faces lies within the <b>Heavenly Corridor</b>!
+The hidden floor! I found it!
+But I got overly excited and fell...\
+"""
+
+[[room]]
+coord = [5, 4]
+name = "Cliff of Radiance"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+A <b>Watchtower</b> soars above the <b>Temple of the Sun</b>.
+Trap to capture thieves have been newly set.
+In a newly constructed wall, too, the key has been hidden.\
+"""
+
+[[room]]
+coord = [6, 2]
+name = "Monument of Time"
+
+[[room.feature]]
+type = "Tablet"
+text = """\
+\"The first age of the sun was destroyed by flood,
+The second age of the sun was destroyed by the god of wind,
+The third age of the sun was destroyed by the god of fire,
+The fourth age of the sun was destroyed by blood and fire
+falling from the sky.\"
+The same thing was written in Mayan prophecy.
+Could there be a connection?\
+"""

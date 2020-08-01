@@ -1,0 +1,9 @@
+[package]
+edition = "2018"
+name = "la-mulana-notes"
+version = "0.0.0"
+
+[dependencies]
+toml = "0.5.6"
+serde = "1.0.114"
+serde_derive = "1.0.114"
